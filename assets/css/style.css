@@ -415,6 +415,7 @@ a {
 		font-size: 36px;
 		font-weight: 700;
 	}
+
 	section h2 {
 		width: 50%;
 		margin-bottom: 20px;
@@ -458,9 +459,8 @@ a {
 		font-weight: bold;
 	} */
 	header a {
-		font-size: 4vw;
+		font-size: 2vw;
 	}
-
 }
 
 @media screen and (max-width: 575px) {
