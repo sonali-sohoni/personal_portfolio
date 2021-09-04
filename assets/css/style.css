@@ -100,17 +100,17 @@ header nav ul li a:hover {
 }
 
 footer {
-	background-color: var(--wine);
-	padding: 15px;
-	font-weight: bold;
-	color: white;
 }
 
-.contact {
+#contact {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	background-color: var(--wine);
+	padding: 15px;
+	font-weight: bold;
+	color: white;
 }
 
 .contact-info {
@@ -134,7 +134,7 @@ footer {
 	height: 32px;
 }
 section {
-	padding: 40px 10px;
+	padding: 30px 10px;
 }
 
 section:first-of-type {
@@ -460,6 +460,7 @@ a {
 	header a {
 		font-size: 4vw;
 	}
+
 }
 
 @media screen and (max-width: 575px) {
