@@ -28,6 +28,7 @@
 	--headerTxt: #919394; /*#e6fafa*/
 	--lskyblue: #e8eef0;
 	--wheatflour: #d7cec7;
+	--skillscolor: ##f0f5f3;
 }
 
 body {
@@ -130,6 +131,9 @@ header nav ul li a:hover {
 	width: 32px;
 	height: 32px;
 }
+.contact-icon span {
+	color: white;
+}
 section {
 	padding: 30px 10px;
 }
@@ -225,12 +229,36 @@ section h2 {
 	font-size: 22px;
 }
 
-.work {
+.work,
+.skills {
 	width: 80%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin: 30px auto;
+	align-items: center;
+}
+
+.skills-section {
+	background-color: #d5d5d5;
+}
+.skill-item {
+	flex: 1 20%;
+	height: 100px;
+	/* Same as width, sets height */
+	margin: 1.5%; /* (100-32*3)/2 */
+	position: relative;
+	text-align: center;
+}
+
+.skill-icon h3 {
+	margin-bottom: 5px;
+	font-weight: 400;
+	color: #333;
+}
+
+.skill-icon {
+	margin-bottom: 10px;
 }
 
 .project-item {
@@ -385,7 +413,10 @@ a {
 	.self-img {
 		width: 100%;
 	}
-	section,
+	.about-me-desc p {
+		text-align: center;
+	}
+	.hero,
 	.work {
 		margin-top: 20px;
 		padding-bottom: 20px;
