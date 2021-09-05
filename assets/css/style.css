@@ -4,37 +4,27 @@
 	box-sizing: border-box;
 }
 :root {
-	--aqua: #134752;
-	--daqua: #306b70;
-	--darkaqua: #026670;
-	--blue: #3a82e0;
-	--lightaqua: #6fb3b8;
-	--teal: #52ab98;
 	--grey: #f2f2f2;
-	--lightblue: #c8d8e4;
 	--cream: #f6f6f2;
 	--white: #ffffff;
 	--ltblue: #ebf7ff;
 	--lightgray: #d3d3d3;
-	--darkblue: #002e5b; /*#002e5c*/
-	--red1: #e4554e;
+	--darkblue: #002e5b;
 	--black: #212529;
 	--darkgray: #565656;
 	--darkergray: #3b3b3b;
 	--wine: #76323f;
-	/* --hover: #a1b1b7; */
 	--hover: #a6bbc2;
 	--tan: #c09f80;
-	--headerTxt: #919394; /*#e6fafa*/
+	--headerTxt: #919394;
 	--lskyblue: #e8eef0;
 	--wheatflour: #d7cec7;
-	--skillscolor: ##f0f5f3;
 }
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
-
+/* HEADER / NAV BAR STYLES START */
 header {
 	background-color: #ffffff;
 	padding: 10px 35px;
@@ -63,6 +53,7 @@ header h1 {
 	text-shadow: 0px 11px 10px #c09f80;
 }
 
+/* NAVIGATION LINKS */
 header nav {
 	margin: 7px 0px;
 }
@@ -89,9 +80,11 @@ header nav ul li a:hover {
 	border-radius: 10px;
 	color: var(--wine);
 	text-shadow: none;
-	background-color: rgba(192, 159, 128, 0.4);
+	background-color: rgba(100, 99, 98, 0.4);
 }
+/* HEADER / NAV BAR STYLES END */
 
+/* FOOTER / CONTACT STYLES START */
 #contact {
 	display: flex;
 	flex-wrap: wrap;
@@ -109,11 +102,6 @@ header nav ul li a:hover {
 	justify-content: center;
 	align-items: center;
 	flex: 3;
-
-	/* display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center; */
 }
 .contact-icon {
 	padding: 5px;
@@ -126,6 +114,9 @@ header nav ul li a:hover {
 .contact-icon span {
 	color: white;
 }
+/* FOOTER/CONTACT STYLES END */
+
+/* SECTIONS STYLES  */
 section {
 	padding: 30px 10px;
 }
@@ -133,7 +124,7 @@ section {
 section:first-of-type {
 	padding-top: 0;
 }
-
+/* SECTION HEADING */
 section h2 {
 	font-size: 34px;
 	text-align: center;
@@ -143,7 +134,7 @@ section h2 {
 	padding-bottom: 20px;
 	border-bottom: 5px solid var(--wine);
 }
-
+/* ABOUT ME SECTION STYLES START */
 .hero {
 	background-image: url("../images/brown.svg");
 	background-position: center;
@@ -180,23 +171,21 @@ section h2 {
 	/* font-size: 24px; */
 	font-size: 1.2vw;
 	font-family: Helvetica, Arial, sans-serif;
-	/* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 	line-height: 1.7;
 	font-weight: 500;
 	color: var(--darkblue);
-
 	text-align: left;
 }
 
 .about-me-desc span {
 	font-size: 36px;
 	font-weight: 600;
-
 	margin-bottom: 20px;
 	color: var(--wine);
 	display: block;
 }
 
+/* EDUCATION AND INTERESTS */
 .edu-interests {
 	display: flex;
 	flex-wrap: wrap;
@@ -221,7 +210,9 @@ section h2 {
 	text-align: left;
 	font-size: 22px;
 }
+/* ABOUT ME SECTION STYLES END */
 
+/* WORK AND SKILLS FLEXBOX */
 .work,
 .skills {
 	width: 80%;
@@ -232,14 +223,14 @@ section h2 {
 	align-items: center;
 }
 
+/* SKILLS SECTION STYLES START */
 .skills-section {
 	background-color: #d5d5d5;
 }
 .skill-item {
 	flex: 1 20%;
 	height: 100px;
-	/* Same as width, sets height */
-	margin: 1.5%; /* (100-32*3)/2 */
+	margin: 1.5%;
 	position: relative;
 	text-align: center;
 }
@@ -253,7 +244,9 @@ section h2 {
 .skill-icon {
 	margin-bottom: 10px;
 }
+/* SKILLS SECTION STYLES END */
 
+/* WORK SECTION STYLES START */
 .project-item {
 	flex: 1 25%;
 	margin: 2%;
@@ -266,11 +259,8 @@ section h2 {
 	justify-content: flex-start;
 	align-items: flex-end;
 	position: relative;
-
-	/* transition-property: width, height, transform;
-	transition-duration: 1.2s, 1.2s, 1.2s; */
 }
-
+/*  IMAGE OVERLAY */
 .layer {
 	background-color: rgba(145, 147, 148, 0.3);
 	/* rgba(248, 247, 216, 0.7); */
@@ -287,7 +277,6 @@ section h2 {
 }
 
 .project-info {
-	/* background-color: var(--darkblue); */
 	background-color: rgba(145, 147, 148, 0.3);
 	border-radius: 5%;
 }
@@ -295,13 +284,6 @@ section h2 {
 .project-item:nth-of-type(even) {
 	background-color: var(--wheatflour);
 }
-
-/* .project-item:hover {
-	/* width: 400px;
-	height: 250px;
-	transform: translateY(-15px); 
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-} */
 
 #project1 {
 	background: url("../images/creditunions.jpg");
@@ -346,13 +328,6 @@ section h2 {
 	margin: 0px 0px;
 	text-align: left;
 	border: 3px solid var(--darkblue);
-}
-
-/* .project-item div {
-	flex: 1;
-	text-align: center;
-} */
-.project-item h3 {
 	padding: 0 5px;
 	color: var(--wine);
 	border-radius: 5px;
